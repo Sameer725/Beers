@@ -1,0 +1,31 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gray-primary: #818890;
+  --color-gray-secondary: #535661;
+  --color-yellow: #a08600;
+  --color-blue: #418ff5;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+[hidden] {
+  pointer-events: none;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--color-white); /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-yellow); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}

@@ -1,0 +1,32 @@
+@import url("./app.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Buzz";
+  src: url("../assets/fonts/Buzz.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Drunk";
+  src: url("../assets/fonts/Drunk.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Sober";
+  src: url("../assets/fonts/Sober.woff2") format("woff2");
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
